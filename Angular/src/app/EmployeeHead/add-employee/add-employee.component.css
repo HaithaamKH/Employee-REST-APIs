@@ -1,0 +1,64 @@
+/* Input Field Styling */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Space between inputs */
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #4CAF50; /* Green border when focused */
+  }
+  
+  /* Submit Button Styling */
+  .submit-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Form Styling */
+  form {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limit form width for better appearance */
+    margin: 0 auto; /* Center align the form */
+  }
+  
+  /* Label Styling */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Display labels as block elements */
+    font-size: 14px;
+  }
+  
+  /* Container Styling for the Form */
+  div {
+    margin: 20px;
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .input-field.ng-invalid.ng-touched {
+    border-color: red;
+  }
+  

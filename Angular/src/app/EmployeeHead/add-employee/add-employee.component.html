@@ -1,0 +1,56 @@
+<div>
+    <form #addForm="ngForm" (ngSubmit)="saveEmployee()">
+      <label for="firstName">First Name</label><br>
+      <input 
+        type="text" 
+        [disabled]="status === 'view'"
+        id="firstName" 
+        name="fname" 
+        [(ngModel)]="employee.firstName"
+        class="input-field"
+        required
+        #firstName="ngModel"
+      ><br>
+      <div *ngIf="firstName.invalid && firstName.touched" class="error-message">
+        First Name is required.
+      </div>
+  
+      <label for="lastName">Last Name</label><br>
+      <input 
+        type="text" 
+        id="lastName" 
+        name="lname" 
+        [(ngModel)]="employee.lastName"
+        [disabled]="status === 'view'"
+        class="input-field"
+        required
+        #lastName="ngModel"
+      ><br>
+      <div *ngIf="lastName.invalid && lastName.touched" class="error-message">
+        Last Name is required.
+      </div>
+  
+      <label for="email">Email</label><br>
+      <input 
+        type="email" 
+        id="email" 
+        [disabled]="status === 'view'"
+        name="email" 
+        [(ngModel)]="employee.email"
+        class="input-field"
+        required
+        #email="ngModel"
+      ><br>
+      <div *ngIf="email.invalid && email.touched" class="error-message">
+        Valid Email is required.
+      </div>
+  
+      <input 
+        type="submit" 
+        value="Save" 
+        [disabled]="addForm.invalid" 
+        class="submit-btn"
+      >
+    </form>
+  </div>
+  

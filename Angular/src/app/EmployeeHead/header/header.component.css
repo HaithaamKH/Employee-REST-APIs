@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #333; /* Neutral dark background */
+  color: white; /* Text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 18px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Slightly emphasize brand name */
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ccc; /* Light gray on hover */
+}

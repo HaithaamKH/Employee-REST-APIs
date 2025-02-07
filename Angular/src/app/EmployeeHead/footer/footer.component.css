@@ -1,0 +1,40 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Ensures about-me on the left, contact on the right */
+  align-items: flex-start; /* Aligns content at the top */
+  padding: 20px 30px; /* Adds space around the footer */
+  background-color: #333; /* Neutral dark background */
+  color: white; /* White text for contrast */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+}
+
+.footer-container .about-me,
+.footer-container .contact {
+  flex: 1; /* Gives equal space to both sections */
+}
+
+.footer-container .about-me {
+  padding-right: 20px; /* Adds spacing to separate the sections */
+}
+
+.footer-container .about-me h3,
+.footer-container .contact h2 {
+  margin-bottom: 10px; /* Space between heading and content */
+}
+
+.footer-container a {
+  color: #66c2ff; /* Subtle blue for links */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+  color: #99d6ff; /* Lighter blue on hover */
+}
+
+.footer-container .contact p {
+  margin: 5px 0; /* Consistent spacing between lines */
+}
+
+
+
